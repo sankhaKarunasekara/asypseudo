@@ -1,0 +1,89 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ASYCUDA PSEUDOCODE",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.asypseudo",
+					"match": "\\b(If|Then|Else|ElseIf|EndIf|Endif|End|For|While|EndWhile|Do|Criteria|Return|Function|Action)\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.asypseudo",
+					"match": "\\b(IS|=|<>|<|>|<=|>=|LT|LE|GT|GE|Div|Minus|\\+|\\-|\\*|\\/|or|and|not)\\b"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "support.function.asypseudo",
+					"match": "\\b(InListCom|InListCty|InListTar|InListDec|ValStr|RoundSup|SubStrFnd|newImporter|AssignSectionExaminer|AddSectionColor|Found)\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.asypseudo",
+					"match": "\\b(Red|Blue|Yellow|Green|Found|Officer|Chief|True|False)\\b"
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.other.asypseudo",
+					"match": "\\b(Num\\d{2}|Str\\d{2}|[A-Z][A-Za-z0-9_]*)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.asypseudo",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.asypseudo",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.asypseudo",
+					"match": "\\b\\d+(\\.\\d+)?\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.asypseudo"
+}

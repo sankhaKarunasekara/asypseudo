@@ -1,0 +1,37 @@
+{
+  "name": "asypseudo",
+  "displayName": "ASYPSEUDO",
+  "description": "ASYCUDA PSEUDOCODE",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "asycuda-pseudocode",
+        "aliases": [
+          "ASYCUDA PSEUDOCODE",
+          "asycuda-pseudocode"
+        ],
+        "extensions": [
+          ".asypseudo"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "asycuda-pseudocode",
+        "scopeName": "source.asypseudo",
+        "path": "./syntaxes/asycuda-pseudocode.tmLanguage.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "asypseudo": "file:"
+  }
+}
