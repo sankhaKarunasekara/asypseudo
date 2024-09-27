@@ -29,6 +29,28 @@
         "scopeName": "source.asypseudo",
         "path": "./syntaxes/asycuda-pseudocode.tmLanguage.json"
       }
+    ],
+    "themes": [
+      {
+        "label": "Your Theme Name",
+        "uiTheme": "vs-dark",
+        "path": "./themes/your-theme-color-theme.json",
+        "scope": "variable.system.asypseudo",
+        "settings": {
+          "foreground": "#FF0000",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "label": "Your Theme Name",
+        "uiTheme": "vs-dark",
+        "path": "./themes/your-theme-color-theme.json",
+        "scope": "variable.user.asypseudo",
+        "settings": {
+          "foreground": "#0000FF",
+          "fontStyle": "italic"
+        }
+      }
     ]
   },
   "dependencies": {

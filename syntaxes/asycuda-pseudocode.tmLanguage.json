@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.asypseudo",
-					"match": "\\b(If|Then|Else|ElseIf|EndIf|Endif|End|For|While|EndWhile|Do|Criteria|Return|Function|Action)\\b"
+					"match": "\\b(If|Then|Else|Endif|End|For|Criteria|Return|Function|Action)\\b"
 				}
 			]
 		},
@@ -37,7 +37,7 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.asypseudo",
-					"match": "\\b(IS|=|<>|<|>|<=|>=|LT|LE|GT|GE|Div|Minus|\\+|\\-|\\*|\\/|or|and|not)\\b"
+					"match": "\\b(:=|IS|=|<>|<|>|<=|>=|LT|LE|GT|GE|Div|Minus|\\+|\\-|\\*|\\/|or|and|not)\\b"
 				}
 			]
 		},
@@ -45,7 +45,7 @@
 			"patterns": [
 				{
 					"name": "support.function.asypseudo",
-					"match": "\\b(InListCom|InListCty|InListTar|InListDec|ValStr|RoundSup|SubStrFnd|newImporter|AssignSectionExaminer|AddSectionColor|Found)\\b"
+					"match": "\\b(InListCom|InListCty|InListTar|InListDec|ValStr|RoundSup|SubStrFnd|newImporter|AssignSectionExaminer|AddSectionColor)\\b"
 				}
 			]
 		},
@@ -53,15 +53,19 @@
 			"patterns": [
 				{
 					"name": "constant.language.asypseudo",
-					"match": "\\b(Red|Blue|Yellow|Green|Found|Officer|Chief|True|False)\\b"
+					"match": "\\b(Red|Blue|Yellow|Green|Found|Officer|Chief|True|False|TermsOfPay|Consignee|ExtdProc|ItmTotal)\\b"
 				}
 			]
 		},
 		"variables": {
 			"patterns": [
 				{
-					"name": "variable.other.asypseudo",
-					"match": "\\b(Num\\d{2}|Str\\d{2}|[A-Z][A-Za-z0-9_]*)\\b"
+					"name": "variable.system.asypseudo",
+					"match": "\\b(WhsCod|TotalStat|MoTBorder|CAPRef)\\b"
+				},
+				{
+					"name": "variable.user.asypseudo",
+					"match": "\\b(Num\\d{2}|Str\\d{2})\\b"
 				}
 			]
 		},
