@@ -313,14 +313,14 @@
     {
       "scope": "variable.system.asypseudo",
       "settings": {
-        "foreground": "#ffee80", // Red color for system variables
-        // "fontStyle": "bold"
+        "foreground": "#FFF", // Red color for system variables
+        "fontStyle": "bold"
       }
     },
     {
       "scope": "variable.user.asypseudo",
       "settings": {
-        "foreground": "#e1efff", // Blue color for user variables
+        "foreground": "#FFF", // Blue color for user variables
         "fontStyle": "italic"
       }
     },

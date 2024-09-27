@@ -18,7 +18,7 @@
           "asycuda-pseudocode"
         ],
         "extensions": [
-          ".asypseudo"
+          ".asy"
         ],
         "configuration": "./language-configuration.json"
       }
@@ -35,21 +35,13 @@
         "label": "Your Theme Name",
         "uiTheme": "vs-dark",
         "path": "./themes/your-theme-color-theme.json",
-        "scope": "variable.system.asypseudo",
-        "settings": {
-          "foreground": "#FF0000",
-          "fontStyle": "bold"
-        }
+        "scope": "variable.system.asypseudo"
       },
       {
         "label": "Your Theme Name",
         "uiTheme": "vs-dark",
         "path": "./themes/your-theme-color-theme.json",
-        "scope": "variable.user.asypseudo",
-        "settings": {
-          "foreground": "#0000FF",
-          "fontStyle": "italic"
-        }
+        "scope": "variable.user.asypseudo"
       }
     ]
   },

@@ -53,7 +53,7 @@
 			"patterns": [
 				{
 					"name": "constant.language.asypseudo",
-					"match": "\\b(Red|Blue|Yellow|Green|Found|Officer|Chief|True|False|TermsOfPay|Consignee|ExtdProc|ItmTotal)\\b"
+					"match": "\\b(Red|Blue|Yellow|Green|Found|Officer|Chief|True|False)\\b"
 				}
 			]
 		},
@@ -61,7 +61,7 @@
 			"patterns": [
 				{
 					"name": "variable.system.asypseudo",
-					"match": "\\b(WhsCod|TotalStat|MoTBorder|CAPRef)\\b"
+					"match": "\\b(Chapter|TermsOfPay|CtyOrigCod|Consignee|ExtdProc|Heading|WhsCod|NatProc|ItmTotal|ItmNber|TotalStat|TotalTaxes|MoTBorder|CAPRef|RedLane|GreenLane|BlueLane|YellowLane)\\b"
 				},
 				{
 					"name": "variable.user.asypseudo",
