@@ -1,7 +1,7 @@
 {
   "name": "asypseudo",
   "displayName": "ASYPSEUDO",
-  "description": "ASYCUDA PSEUDOCODE",
+  "description": "Syntax highlighter for ASYCUDA PSEUDOCODE",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.93.0"
