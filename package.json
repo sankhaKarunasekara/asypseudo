@@ -3,12 +3,19 @@
   "displayName": "ASYPSEUDO",
   "description": "Syntax highlighter for ASYCUDA PSEUDOCODE",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/sankhaKarunasekara/asypseudo.git"
+  },
   "engines": {
     "vscode": "^1.93.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "scripts": {
+    "postinstall": "npm pkg delete dependencies.asypseudo"
+  },
   "contributes": {
     "languages": [
       {
@@ -32,16 +39,21 @@
     ],
     "themes": [
       {
-        "label": "Your Theme Name",
+        "label": "Cobalt2",
         "uiTheme": "vs-dark",
-        "path": "./themes/your-theme-color-theme.json",
+        "path": "./themes/cobalt2.json",
         "scope": "variable.system.asypseudo"
       },
       {
-        "label": "Your Theme Name",
+        "label": "Cobalt2",
         "uiTheme": "vs-dark",
-        "path": "./themes/your-theme-color-theme.json",
+        "path": "./themes/cobalt2.json",
         "scope": "variable.user.asypseudo"
+      },
+      {
+        "label": "Cobalt2 Red Lane",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cobalt2-red-lane.json"
       }
     ]
   },
